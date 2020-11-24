@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100rem;
+  margin: 10rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10rem 20rem 40rem 10rem;
+      grid-template-rows: 10rem 20rem 40rem 10rem;
+  -ms-grid-columns: (1fr)[3] 20rem;
+      grid-template-columns: repeat(3, 1fr) 20rem;
+  grid-gap: 3rem;
+}
+
+.container > * {
+  background-color: #cc160c;
+  padding: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Kumbh Sans";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.main-content {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+/*# sourceMappingURL=style.css.map */
